@@ -18,4 +18,13 @@ public class Assertion {
         }
         System.out.println();
     }
+
+    public static void assertEquals(String msg, int expected, int actual) {
+        if (expected == actual) {
+            System.out.printf("%s passed", msg);
+        } else {
+            System.out.printf("%s fail expected: %d, actual: %d", msg, expected,  actual);
+        }
+        System.out.println();
+    }
 }
