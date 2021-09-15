@@ -3,6 +3,7 @@ public class TestString {
         splitTest();
         charAtTest();
         lastIndexOftest();
+        indexOf();
     }
 
     public static void splitTest() {
@@ -18,5 +19,10 @@ public class TestString {
     public static void lastIndexOftest() {
         int expected = 4;
         Assertion.assertEquals("TestString.lastIndexOftest", expected, "теспир".lastIndexOf('и'));
+    }
+
+    public static void indexOf(){
+        int expected = 3;
+        Assertion.assertEquals("TestString.indexOf",expected,"aбчихба".indexOf('и'));
     }
 }
