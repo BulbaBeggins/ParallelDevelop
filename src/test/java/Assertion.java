@@ -5,8 +5,9 @@ public class Assertion {
         if (expected.equals(actual)) {
             System.out.printf("%s passed", msg);
         } else {
-            System.out.printf("%s fail expected: %s, actual: &s", msg, expected, actual);
+            System.out.printf("%s fail expected: %s, actual: %s", msg, expected, actual);
         }
+        System.out.println();
     }
 
     public static void assertEquals(String msg, Object[] expected, Object[] actual) {
@@ -15,5 +16,6 @@ public class Assertion {
         } else {
             System.out.printf("%s fail expected: %s, actual: %s", msg, Arrays.toString(expected),  Arrays.toString(actual));
         }
+        System.out.println();
     }
 }
